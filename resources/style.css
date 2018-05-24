@@ -119,9 +119,9 @@ a {
 
 .downtown.east.oak {
   display: inline-flex;
-  justify-content: space-around;
+  justify-content: center;
   background-color: black;
-  width: 300px;
+  max-width: 300px;
   opacity: 1;
   flex-direction: row;
 }
