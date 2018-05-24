@@ -8,49 +8,134 @@ html, body {
   opacity: 0.9;
 }
 
+h2 {
+  text-align: center;
+}
+
+h4 {
+  text-align: center;
+}
 /*header*/
 
-#header {
-  display: inline-flex;
-  width: 100%;
+header {
+  display: flex;
+  align-items: center;
   position: fixed;
+  z-index: 2;
+  width: 100%;
+  height: 69px;
   background-color: black;
   border-bottom: 1px solid seashell;
-  margin: 20px 10px 0px 10px;
-  z-index: 5;
-  max-height: 69px;
+  padding: 0px 10px;
 }
 
-.menu {
-  display: inline-flex;
-}
-
-nav li {
-  flex-wrap: nowrap;
-  display: inline-flex;
+nav span {
+  display: inline-block;
+  padding: 20px 10px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 a {
   color: seashell;
   text-decoration: underline;
-  display: inline-flex;
-  justify-content: flex-end;
-  width: 1000px;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  flex: 1 1 150px;
-  align-items: baseline;
+  align-items: center;
 }
 
 .logo {
   height: 50px;
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  flex-grow: 1 1 100px;
+  padding-right: 700px;
+  height: 50px;
 }
+
 /*mission*/
+
+.mission {
+  display: flex;
+  justify-content: center;
+  background-image: url("/Users/Sally/Documents/Code Academy Projects/Tea Cosy/resources/images/img-mission-background.jpg");
+  height: 700px;
+  width: 1200px;
+  margin: 0px 30px;
+  position: relative;
+  top:30px;
+  flex-direction: column;
+}
+.text {
+  display: inline-flex;
+  text-align: center;
+  flex-direction: column;
+  background-color: black;
+  line-height: 0px;
+}
 
 /*tea*/
 
+.container {
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 80px 0px 0px 30px;
+}
+
+.gallery {
+  width: 1000px;
+  margin-left: 100px;
+}
+
+.row img {
+  display: inline-flex;
+  justify-content: center;
+  max-width: 300px;
+  max-height: 200px;
+  flex-direction: row;
+  margin: 0px 10px;
+  flex-wrap: wrap;
+}
+
+#tea {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 1000px;
+}
+
 /*locations*/
 
+#locations {
+  display: flex;
+  justify-content: center;
+  margin: 0px 30px;
+  position: relative;
+  top: 1300px;
+  width: 1200px;
+  height: auto;
+  background-image: url("/Users/Sally/Documents/Code Academy Projects/Tea Cosy/resources/images/img-locations-background.jpg");
+}
+
+.downtown.east.oak {
+  display: inline-flex;
+  justify-content: space-around;
+  background-color: black;
+  width: 300px;
+  opacity: 1;
+  flex-direction: row;
+}
+
+h3 {
+  text-align: center;
+}
+
 /*contact*/
+
+h5 {
+  text-align: center;
+}
+
+.copyright {
+  text-align: left;
+}
